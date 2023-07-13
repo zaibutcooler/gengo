@@ -1,5 +1,5 @@
 <template>
-  <div>Home Page</div>
+  <div>Vacation Rentals</div>
 </template>
 
 <script lang="ts">

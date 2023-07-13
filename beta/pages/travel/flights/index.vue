@@ -1,5 +1,5 @@
 <template>
-  <div>Home Page</div>
+  <div>Flights</div>
 </template>
 
 <script lang="ts">
