@@ -1,0 +1,7 @@
+version: "2.19.1"
+services:
+  travel_beta:
+    build: "./beta"
+    container_name: "travel_beta_c"
+    ports:
+      - "3000:3000"

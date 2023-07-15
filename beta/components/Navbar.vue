@@ -12,7 +12,7 @@
           <li
             v-for="link in links"
             :key="link.route"
-            class="py-1.5 px-4 mx-2 border border-green-400 rounded-full text-center hover:bg-green-100">
+            class="py-1.5 px-4 mx-2 border border-green-400 rounded-full text-center hover:bg-green-100 hover:text-emerald-600">
             <NuxtLink :to="link.route">
               {{ link.title }}
             </NuxtLink>
