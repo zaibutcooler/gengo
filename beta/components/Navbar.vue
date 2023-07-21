@@ -1,30 +1,26 @@
 <template>
-  <main class="container mx-auto text-green-800 font-semibold">
-    <div
-      class="flex justify-between items-center border-b border-green-100 py-2">
-      <section class="py-2 flex items-center">
-        <div class="mx-4 font-bold text-lg">
-          <NuxtLink to="/">Home</NuxtLink>
+  <nav class="bg-white border-b border-blue-100 text-green-700">
+    <div class="px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-12">
+        <!-- Logo -->
+        <div class="flex-shrink-0 xs:w-1/6">
+          <a href="#hero" class="text-green-800 text-sm font-semibold">Home</a>
         </div>
-      </section>
-      <section class="text-sm flex">
-        <ul class="flex text-sm">
-          <li
-            v-for="link in links"
-            :key="link.route"
-            class="py-1.5 px-4 mx-2 border border-green-400 rounded-full text-center hover:bg-green-100 hover:text-emerald-600">
-            <NuxtLink :to="link.route">
-              {{ link.title }}
-            </NuxtLink>
-          </li>
-        </ul>
-        <button
-          class="py-1.5 px-4 ml-4 mr-2 border rounded-lg text-center border-blue-300 text-blue-800">
-          Join
-        </button>
-      </section>
+        <!-- Menu -->
+        <div>
+          <div class="flex items-center space-x-2">
+            <NuxtLink
+              v-for="link in links"
+              :key="link.title"
+              :href="link.route"
+              class="text-green-800 hover:text-emerald-500 px-3 py-1 text-xs border hover:border-green-300 rounded-full text-sm font-medium"
+              >{{ link.title }}</NuxtLink
+            >
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
+  </nav>
 </template>
 
 <script lang="ts">
@@ -60,7 +56,7 @@ export default {
           iconName: "bi bi-building",
         },
         {
-          title: "Vacation Rentals",
+          title: "Rentals",
           route: "/travel/vacation-rentals",
           iconName: "bi bi-house-fill",
         },

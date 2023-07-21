@@ -1,11 +1,9 @@
 <template>
   <main>
-    <Navbar />
-    <section class="container mx-auto flex">
-      <div class="hidden lg:block lg:w-1/5 min-h-screen border-r">
-        <Sidebar />
-      </div>
-      <div class="text-green-900">
+    <!-- <Navbar /> -->
+    <LandingNavbar />
+    <section class="flex justify-center">
+      <div class="container w-full md:w-[800px] lg:w-[1000px] text-green-900">
         <slot />
       </div>
     </section>
