@@ -5,7 +5,7 @@
 // import { Separator } from "@/components/ui/separator"
 // import FullLimitView from "@/components/application/FullLimitView"
 
-import Chat from "./_components/Chat"
+import Chat from "@/components/chat/Chat"
 
 export default async function ChatPage() {
   // const { userId } = auth()
