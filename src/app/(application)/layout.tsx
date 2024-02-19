@@ -1,10 +1,9 @@
 import { ReactNode } from "react"
-import { auth } from "@clerk/nextjs"
 
 // import { prismadb } from "@/lib/prismadb"
 // import { getPlan } from "@/lib/subscription"
-import Header from "@/components/navigations/application/Header"
-import Sidebar from "@/components/navigations/application/Sidebar"
+import Header from "@/components/navigations/application/header"
+import { Sidebar } from "@/components/navigations/application/sidebar"
 
 // import { PricingModalProvider } from "@/components/providers/pro-modal-provider"
 
